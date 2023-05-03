@@ -14,16 +14,19 @@
         An abstract class can also be thought of as "incomplete class" as in it needs to be inherited in order for it be complete. For example you want a user to pick a type vehicle(car, truck, boat, bike) not a generic no type vehicle. So you can use the abstract keyword in order to prevent it from being instantiated to begin with. As or a function that is abstract it is body-less that is then used and defined within the class that inherits it (View the animal class photo).
         The abstract keyword is used for classes and methods:
         - **Abstract class:** is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
-        - **Abstract method**: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).
-        ![faa8b7e59a106a3f83520c6b436ebea3.png](file:///Users/ricardo/.config/joplin-desktop/resources/54590b0438fb42298fee8c80c7a9dd02.png)
+        - **Abstract method**: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).![54590b0438fb42298fee8c80c7a9dd02](https://user-images.githubusercontent.com/22580284/236044453-3056d82c-1ba0-490e-b5b3-2534db2060d9.png)
+
     3.  **Inheritance**: The ability to create new classes from existing ones. It is accomplished by gaining access to, altering and extending the behavior of objects in the parent class.
-        IMAGE HERE
-    4.  **Polymorphism**: "One name, many forms". It is accomplished using several methods with the same name but differnt implementations
-        IMAGE HERE
-        Look at the above how both the Pig and Dog class inherit from animal. Animal has a base fucntion that is "**virtual**" therefore it can be overriden. This allows us to implement our own version of **animalSound()** from the child classes. While still using the same definition.
+        ![e5711846ddfb440db14af8023b64ab57](https://user-images.githubusercontent.com/22580284/236044523-ef7f0aa8-188f-4db2-961d-b6b0eaaa0809.png)
+
+    4.  **Polymorphism**: "One![d4a720857a3c4296bc84e83ff19a9975](https://user-images.githubusercontent.com/22580284/236044692-35c7b492-f2a9-4aed-b4e2-d4ff83b986b1.png)
+ name, many forms". It is accomplished using several methods with the same name but different implementations
+        ![d4a720857a3c4296bc84e83ff19a9975](https://user-images.githubusercontent.com/22580284/236044717-cebf5e4f-8938-44ec-be80-133f43c99364.png
+
+        Look at the above how both the Pig and Dog class inherit from animal. Animal has a base function that is "**virtual**" therefore it can be overridden. This allows us to implement our own version of **animalSound()** from the child classes. While still using the same definition.
 2.  What is the common Language Runtime (CLR)
     
-    1.  This manages the .NET programs. The just in time compilier translates compiled code into machine instructions. This is the program that the computer runs. CLR provides memory management, exception handling, type safety, and other services.
+    1.  This manages the .NET programs. The just in time compiler translates compiled code into machine instructions. This is the program that the computer runs. CLR provides memory management, exception handling, type safety, and other services.
 3.  What is an interface?
     
     1.  It is a class blueprint. It is like an abstract class in that all the methods declared within the interface are abstract. It cannot have a method body and cannot be instantiated. Instead it is used to achieve multiple inheritances that cant reach.
@@ -62,9 +65,9 @@
 9.   **IEnumerable vs IQueryable**
     - - IQueryable is suitable for querying data from out-memory (like remote database, service) collections. Whereas IEnumerable is good for In-Memory Collection query.
         - IEnumerable doesn’t support lazy loading. Hence not suitable for paging like scenarios. Whereas Iqueryable support lazy loading and suitable for paging like senearios.
-        - So if you working with only in-memory data collection IEnumerable is a good choice but if you want to query data collection which is connected with database IQueryable is a better choice as it reduces network traffic and uses the power of SQL language.        IMAGE HERE
-
-        IMAGE HERE
+        - So if you working with only in-memory data collection IEnumerable is a good choice but if you want to query data collection which is connected with database IQueryable is a better choice as it reduces network traffic and uses the power of SQL language.
+![e7372c1393524e8c8fabcb6d57762897](https://user-images.githubusercontent.com/22580284/236044940-61545321-0fd7-4853-a377-262452d5d730.png)
+![1682ee0f7dc14d888c8f60e6caaa87f4](https://user-images.githubusercontent.com/22580284/236045038-f0d29f1f-3734-4097-a7e7-9f1728836fe6.png)
         - IQueryable interface inherits from IEnumerable, so whatever IEnumerable can do, IQueryable can also do
     - Lazy loading vs eager loading:
         - While lazy loading delays the initialization of a resource, eager loading initializes or loads a resource as soon as the code is executed. Eager loading also involves pre-loading related entities referenced by a resource.
