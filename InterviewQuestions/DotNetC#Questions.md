@@ -15,7 +15,7 @@
         The abstract keyword is used for classes and methods:
         - **Abstract class:** is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
         - **Abstract method**: can only be used in an abstract class, and it does not have a body. The body is provided by the derived class (inherited from).
-        IMAGE HERE
+        ![faa8b7e59a106a3f83520c6b436ebea3.png](file:///Users/ricardo/.config/joplin-desktop/resources/54590b0438fb42298fee8c80c7a9dd02.png)
     3.  **Inheritance**: The ability to create new classes from existing ones. It is accomplished by gaining access to, altering and extending the behavior of objects in the parent class.
         IMAGE HERE
     4.  **Polymorphism**: "One name, many forms". It is accomplished using several methods with the same name but differnt implementations
